@@ -15,7 +15,6 @@
             carouselFlip.value.next()
         }, 3000)
     })*/
-    //let windowWidth = window.innerWidth;
 </script>
 
 <template>
