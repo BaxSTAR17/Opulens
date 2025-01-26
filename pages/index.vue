@@ -53,7 +53,7 @@
                 <div class="about-pic"></div>
             </div>
         </div>
-        <div class="header" style="background-color: white; color: black; text-align: center;" v-motion-pop-visible>SAMPLE SHOTS</div>
+        <div class="header" style="background-color: white; color: black; text-align: center;">SAMPLE SHOTS</div>
         <div class="scene semi samples">
             <div class="samp" style="--delay: 1; background-image: url('https://picsum.photos/1920/1080?random=6');"></div>
             <div class="samp" style="--delay: 2; background-image: url('https://picsum.photos/1920/1080?random=7');"></div>
