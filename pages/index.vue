@@ -1,5 +1,5 @@
 <script setup lang="ts" defer>
-    const items = [
+    /*const items = [
         'https://picsum.photos/1920/1080?random=1',
         'https://picsum.photos/1920/1080?random=2',
         'https://picsum.photos/1920/1080?random=3',
@@ -14,7 +14,8 @@
             if(carouselFlip.value.page === carouselFlip.value.pages) return carouselFlip.value.select(0)
             carouselFlip.value.next()
         }, 3000)
-    })
+    })*/
+    let windowWidth = window.innerWidth;
 </script>
 
 <template>
@@ -22,10 +23,10 @@
         <div class="navbar">
             <div class="title"></div>
             <div class="menu">
-                <a href="" class="nav">ABOUT US</a>
+                <a href="" class="nav" v-if="windowWidth > 900">ABOUT US</a>
                 <a href="" class="nav">EVENTS</a>
                 <a href="" class="nav">BOOTHS</a>
-                <a href="" class="nav">CONTACTS</a>
+                <a href="" class="nav">CONNECT</a>
             </div>
         </div>
         <div class="scene one-carousel">
@@ -39,60 +40,30 @@
                 <div class="carouselpic" style="background-image: url('https://picsum.photos/1920/1080?random=4'); --delay: 4"></div>
                 <div class="carouselpic" style="background-image: url('https://picsum.photos/1920/1080?random=5'); --delay: 5"></div>
                 <div class="carouselpic" style="background-image: url('https://picsum.photos/1920/1080?random=6'); --delay: 6"></div>
-                <div class="header">Sample Text</div>
+                <div class="header">OPULENS</div>
                 <div class="subtext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates eos quia quibusdam</div>
             </div>
         </div>
         <div class="scene two-about">
             <div class="about-container">
                 <div class="about-desc">
-                    <div class="about-header"><u>About Opulens</u></div>
-                    <div class="about-text">
-                        The name "Opulens" is inspired by the word opulence, symbolizing great wealth, abundance, and luxuriousness. Our photobooth embodies this essence by offering a premium, unforgettable experience that adds a touch of elegance and sophistication to every event.
-                        <br>
-                        <br>
-                        We strive to not only bring you a luxurious time but also to create a space where memories are made and cherished forever. With Opulens, every snapshot becomes a moment of joy, connection, and celebration—because life’s precious moments deserve nothing less than the finest.
-                    </div>
+                    <div class="about-header">Brief Desc</div>
+                    <div class="about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit enim, delectus mollitia fugiat aliquid aliquam sapiente minima animi, eaque natus modi neque labore ducimus.</div>
+                    <div class="about-btn">LEARN MORE</div>
                 </div>
-                <div class="aboutpic"></div>
+                <div class="about-pic"></div>
             </div>
         </div>
-        <div class="scene three-event">
-            <div class="event-container">
-                <div class="event-header">
-                    EVENTS
-                </div>
-                <div class="event-scroller">
-                    <div class="event-pages"></div>
-                    <div class="event-pages"></div>
-                    <div class="event-pages"></div>
-                </div>
-            </div>
-        </div>
-        <div class="scene four-rates">
-            <div class="rates-header">BOOTHS</div>
-            <div class="booth-container">
-                <div class="booths" style="--cor:-1"></div>
-                <div class="booths" style="--cor:1"></div>
-                <div class="booths" style="--cor:2"></div>
-                <div class="booths" style="--cor:0"></div>
-                <div class="booths" style="--cor:-0.5"></div>
-                <div class="booths" style="--cor:3"></div>
-            </div>
-        </div>
-        <div class="scene five-contacts">
-            <div class="contact-header">CONTACT US!</div>
-            <div class="contacters">
-                <div class="booths" style="--cor: 1;">
-                    <img src="../assets/FontAwesome-Brands-Facebook-icon.png" alt="fb">
-                </div>
-                <div class="booths" style="--cor: -0.5">
-                    <img src="../assets/insta.png" alt="insta" width="250">
-                </div>
-                <div class="booths" style="--cor: -1">
-                    <img src="../assets/email.png" alt="email">
-                </div>
-            </div>
+        <div class="header" style="background-color: white; color: black; text-align: center;" v-motion-pop-visible>SAMPLE SHOTS</div>
+        <div class="scene semi samples">
+            <div class="samp" style="--delay: 1; background-image: url('https://picsum.photos/1920/1080?random=6');"></div>
+            <div class="samp" style="--delay: 2; background-image: url('https://picsum.photos/1920/1080?random=7');"></div>
+            <div class="samp" style="--delay: 3; background-image: url('https://picsum.photos/1920/1080?random=8');"></div>
+            <div class="samp" style="--delay: 4; background-image: url('https://picsum.photos/1920/1080?random=9');"></div>
+            <div class="samp" style="--delay: 5; background-image: url('https://picsum.photos/1920/1080?random=10');"></div>
+            <div class="samp" style="--delay: 6; background-image: url('https://picsum.photos/1920/1080?random=11');"></div>
+            <div class="samp" style="--delay: 7; background-image: url('https://picsum.photos/1920/1080?random=12');"></div>
+            <div class="samp" style="--delay: 8; background-image: url('https://picsum.photos/1920/1080?random=13');"></div>
         </div>
     </main>
 </template>
