@@ -15,7 +15,7 @@
             carouselFlip.value.next()
         }, 3000)
     })*/
-    let windowWidth = window.innerWidth;
+    //let windowWidth = window.innerWidth;
 </script>
 
 <template>
@@ -23,7 +23,7 @@
         <div class="navbar">
             <div class="title"></div>
             <div class="menu">
-                <a href="" class="nav" v-if="windowWidth > 900">ABOUT US</a>
+                <a href="" class="nav">ABOUT US</a>
                 <a href="" class="nav">EVENTS</a>
                 <a href="" class="nav">BOOTHS</a>
                 <a href="" class="nav">CONNECT</a>
