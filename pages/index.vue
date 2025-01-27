@@ -1,13 +1,13 @@
 <script setup lang="ts" defer>
-    /*const items = [
-        'https://picsum.photos/1920/1080?random=1',
-        'https://picsum.photos/1920/1080?random=2',
-        'https://picsum.photos/1920/1080?random=3',
-        'https://picsum.photos/1920/1080?random=4',
-        'https://picsum.photos/1920/1080?random=5'
+    const navs = [
+        [
+            {label: 'ABOUT US'},
+            {label: 'EVENTS'},
+            {label: 'BOOTHS'},
+            {label: 'CONNECT'},
+        ]
     ]
-    const carouselFlip = ref();
-
+    /*
     onMounted(() => {
         setInterval(() => {
             if(!carouselFlip) return
@@ -27,6 +27,13 @@
                 <a href="" class="nav">BOOTHS</a>
                 <a href="" class="nav">CONNECT</a>
             </div>
+            <UDropdown class="dropdown" :items="navs" :popper="{ placement: 'bottom-end' }" :ui="{ background: 'bg-orange-100 dark:bg-orange-200', padding: '0' }">
+                <UButton class="navdrop" trailing-icon="i-uil-bars" color="black"/>
+
+                <template #item="{ item }">
+                    <a href="" class="nav">{{ item.label }}</a>
+                </template>
+            </UDropdown>
         </div>
         <div class="scene one-carousel">
             <!-- <UCarousel ref="carouselFlip" v-slot="{ item }" :items="items" :ui="{ item: 'basis-full' }" class="maincarousel" indicators>
@@ -48,7 +55,7 @@
                 <div class="about-desc">
                     <div class="about-header">Brief Desc</div>
                     <div class="about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit enim, delectus mollitia fugiat aliquid aliquam sapiente minima animi, eaque natus modi neque labore ducimus.</div>
-                    <div class="about-btn">LEARN MORE</div>
+                    <button class="about-btn">LEARN MORE</button>
                 </div>
                 <div class="about-pic"></div>
             </div>
