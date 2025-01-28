@@ -1,20 +1,12 @@
 <script setup lang="ts" defer>
     const navs = [
         [
-            {label: 'ABOUT US'},
-            {label: 'EVENTS'},
-            {label: 'BOOTHS'},
-            {label: 'CONNECT'},
+            {label: 'About Us'},
+            {label: 'Events'},
+            {label: 'Booths'},
+            {label: 'Connect with us!'},
         ]
     ]
-    /*
-    onMounted(() => {
-        setInterval(() => {
-            if(!carouselFlip) return
-            if(carouselFlip.value.page === carouselFlip.value.pages) return carouselFlip.value.select(0)
-            carouselFlip.value.next()
-        }, 3000)
-    })*/
 </script>
 
 <template>
@@ -22,40 +14,31 @@
         <div class="navbar">
             <div class="title"></div>
             <div class="menu">
-                <a href="" class="nav">ABOUT US</a>
-                <a href="" class="nav">EVENTS</a>
-                <a href="" class="nav">BOOTHS</a>
-                <a href="" class="nav">CONNECT</a>
+                <a href="" class="nav">About Us</a>
+                <a href="" class="nav">Events</a>
+                <a href="" class="nav">Booths</a>
+                <a href="" class="nav">Connect with us!</a>
             </div>
-            <UDropdown class="dropdown" :items="navs" :popper="{ placement: 'bottom-end' }" :ui="{ background: 'bg-orange-100 dark:bg-orange-200', padding: '0' }">
-                <UButton class="navdrop" trailing-icon="i-uil-bars" color="black"/>
+            <UDropdown class="dropdown" :items="navs" :popper="{ placement: 'bottom-end' }" :ui="{ background: 'bg-gray-200 dark:bg-gray-300', padding: '0' }">
+                <UButton class="navdrop" trailing-icon="i-uil-bars" color="gray"/>
 
                 <template #item="{ item }">
                     <a href="" class="nav">{{ item.label }}</a>
                 </template>
             </UDropdown>
         </div>
-        <div class="scene one-carousel">
-            <!-- <UCarousel ref="carouselFlip" v-slot="{ item }" :items="items" :ui="{ item: 'basis-full' }" class="maincarousel" indicators>
-                <img :src="item" class="carouselpic" draggable="false">
-            </UCarousel> -->
-            <div class="maincarousel">
-                <div class="carouselpic" style="background-image: url('https://picsum.photos/1920/1080?random=1'); --delay: 1"></div>
-                <div class="carouselpic" style="background-image: url('https://picsum.photos/1920/1080?random=2'); --delay: 2"></div>
-                <div class="carouselpic" style="background-image: url('https://picsum.photos/1920/1080?random=3'); --delay: 3"></div>
-                <div class="carouselpic" style="background-image: url('https://picsum.photos/1920/1080?random=4'); --delay: 4"></div>
-                <div class="carouselpic" style="background-image: url('https://picsum.photos/1920/1080?random=5'); --delay: 5"></div>
-                <div class="carouselpic" style="background-image: url('https://picsum.photos/1920/1080?random=6'); --delay: 6"></div>
-                <div class="header">OPULENS</div>
-                <div class="subtext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates eos quia quibusdam</div>
-            </div>
+        <div class="scene one-carousel">   
+            <div class="header"></div>
+            <div class="presser">WORK WITH ME!</div>
         </div>
         <div class="scene two-about">
             <div class="about-container">
                 <div class="about-desc">
-                    <div class="about-header">Brief Desc</div>
-                    <div class="about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit enim, delectus mollitia fugiat aliquid aliquam sapiente minima animi, eaque natus modi neque labore ducimus.</div>
-                    <button class="about-btn">LEARN MORE</button>
+                    <div class="about-header">OPULENS</div>
+                    <div class="about-text">Our photobooth isn’t just about taking pictures—it’s about bringing people together. Whether it’s a wedding, birthday, corporate event, or any special occasion, our photobooth creates a fun and seamless way to capture shared joy and laughter. Photos have a unique ability to unite generations, spark connections, and make moments truly timeless.
+                    <br><br>
+                    At OPULENS, we’re dedicated to turning moments into memories, and memories into forever. Let us help you celebrate life’s precious moments and make them truly unforgettable!</div>
+                    <button class="presser about-btn">LEARN MORE</button>
                 </div>
                 <div class="about-pic"></div>
             </div>
