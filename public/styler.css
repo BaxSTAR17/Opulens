@@ -10,6 +10,10 @@
     font-family: subtext-bold;
     src: url(../assets/fonts/GlacialIndifference-Bold.otf);
 }
+@font-face {
+    font-family: fancy;
+    src: url(../assets/fonts/Aston-Script.ttf);
+}
 main.wrap {
     width: 100%;
 }
@@ -58,7 +62,6 @@ main.wrap {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: white;
 }
 .semi { height: 400px; }
 .one-carousel {
@@ -68,7 +71,7 @@ main.wrap {
     position: relative;
     height: 600px;
 } .one-carousel .header {
-    width: clamp(450px, 50dvw, 600px);
+    width: clamp(300px, 40dvw, 600px);
     height: 200px;
     background-image: url(../assets/title.png);
     filter:invert(100);
@@ -160,14 +163,17 @@ main.wrap {
 }
 .samples {
     display: flex;
-    height: 300px;
+    height: 650px;
     width: 100%;
     position: relative;
     mask-image: linear-gradient(90deg, transparent, #000, #000, transparent);
     overflow: hidden;
     perspective: 800px;
-    background-color: white;
-} .samples .samp {
+    background-image: url(../assets/Film.png);
+    background-size: cover;
+    background-position: center center;
+}
+/* } .samples .samp {
     position: absolute;
     height: 300px;
     width: 200px;
@@ -180,6 +186,62 @@ main.wrap {
     transform: rotateY(-160deg);
     transform-style: preserve-3d;
     background-size: cover;
+} */
+.past-work {
+    background-image: url(../assets/pastwork.png);
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} .pastworktitle {
+    display: flex;
+    flex-direction: column;
+    width: clamp(340px, 80dvw, 800px);
+    height: 600px;
+    justify-content: space-between;
+    color: #fbf7ba;
+} .pasttitle {
+    letter-spacing: 20px;
+    font-family: primary;
+    font-size: 5rem;
+    align-self: flex-start;
+} .worktitle {
+    font-family: fancy;
+    font-size: 5rem;
+    align-self: flex-end;
+}
+
+.fashion {
+    background-color: #dcd5cf;
+    box-sizing: border-box;
+    padding: 80px 50px 0px 50px;
+    display: flex;
+    flex-direction: column;
+} .fashionheader {
+    color: black;
+    font-family: primary;
+    display: flex;
+    width: 100%;
+    font-size: 4rem;
+    letter-spacing: 15px;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+} .productdesign {
+    font-size: 1rem;
+    letter-spacing: 0px;
+} .line {
+    width: clamp(300px, 20dvw, 500px);
+    background-color: black;
+    height: 2px;
+}
+
+.gordon {
+    background-image: url(../assets/gordon.png);
+    background-size: cover;
+    background-position: center center;
+    position: relative;
 }
 
 @media screen and (max-width: 650px) {
@@ -188,6 +250,9 @@ main.wrap {
         visibility: hidden;
         width: 0px;
         height: 0px;
+    }
+    .title {
+
     }
     .navbar .dropdown {
         display: block;
@@ -228,5 +293,8 @@ main.wrap {
     } 
     .about-header {
         font-size: 2.5em;
+    }
+    .fashionheader {
+        font-size: 2rem;
     }
 }

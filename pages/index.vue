@@ -43,16 +43,24 @@
                 <div class="about-pic"></div>
             </div>
         </div>
-        <div class="header" style="background-color: white; color: black; text-align: center;">SAMPLE SHOTS</div>
         <div class="scene semi samples">
-            <div class="samp" style="--delay: 1; background-image: url('https://picsum.photos/1920/1080?random=6');"></div>
-            <div class="samp" style="--delay: 2; background-image: url('https://picsum.photos/1920/1080?random=7');"></div>
-            <div class="samp" style="--delay: 3; background-image: url('https://picsum.photos/1920/1080?random=8');"></div>
-            <div class="samp" style="--delay: 4; background-image: url('https://picsum.photos/1920/1080?random=9');"></div>
-            <div class="samp" style="--delay: 5; background-image: url('https://picsum.photos/1920/1080?random=10');"></div>
-            <div class="samp" style="--delay: 6; background-image: url('https://picsum.photos/1920/1080?random=11');"></div>
-            <div class="samp" style="--delay: 7; background-image: url('https://picsum.photos/1920/1080?random=12');"></div>
-            <div class="samp" style="--delay: 8; background-image: url('https://picsum.photos/1920/1080?random=13');"></div>
+            
+        </div>
+        <div class="scene past-work">
+            <div class="pastworktitle">
+                <span class="pasttitle">PAST</span>
+                <span class="worktitle">Work</span>
+            </div>
+        </div>
+        <div class="scene fashion">
+            <div class="fashionheader">
+                FASHION FORWARD
+                <div class="line"></div>
+                <div class="productdesign">Product Design</div>
+            </div>
+        </div>
+        <div class="scene gordon">
+            <div class="presser">WORK WITH ME</div>
         </div>
     </main>
 </template>
