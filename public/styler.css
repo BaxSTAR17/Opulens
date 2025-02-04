@@ -218,6 +218,8 @@ main.wrap {
     padding: 80px 50px 0px 50px;
     display: flex;
     flex-direction: column;
+    gap: 20px;
+    height: 700px;
 } .fashionheader {
     color: black;
     font-family: primary;
@@ -235,13 +237,55 @@ main.wrap {
     width: clamp(300px, 20dvw, 500px);
     background-color: black;
     height: 2px;
+} .fashionbody {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: space-between;
+} .fashiondesc {
+    font-family: primary;
+    font-size: 1rem;
+    color: black;
+    width: 270px;
+} .fashionpic {
+    width: 50%;
+    height: 100%;
+    background-image: url(../assets/phone.png);
+    background-size: cover;
 }
 
-.gordon {
+.gordonmm {
     background-image: url(../assets/gordon.png);
     background-size: cover;
     background-position: center center;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 80px 100px 0px 100px;
+} .gordon {
+    color: #fbf7ba;
+    display: flex;
+    width: 100%;
+} .gheader {
+    font-family: primary;
+    font-size: 1rem;
+    justify-content: space-between;
+} .gbody {
+    justify-content: center;
+    font-size: 6rem;
+    flex-wrap: wrap;
+    gap: 5px;
+    align-items: center;
+    height: 500px;
+} .gordonname {
+    font-family: primary;
+    letter-spacing: 30px;
+} .gordonlast {
+    font-family: fancy;
+
 }
 
 @media screen and (max-width: 650px) {
@@ -251,12 +295,10 @@ main.wrap {
         width: 0px;
         height: 0px;
     }
-    .title {
-
-    }
     .navbar .dropdown {
         display: block;
         visibility: visible;
+        transition: all 0.2s ease-in-out;
     } .dropdown .nav {
         font-family: subtext;
         width: 100%;
@@ -274,7 +316,6 @@ main.wrap {
         background-color: white;
     } .dropdown .nav:active {
         color: white;
-        background-color: black;
         cursor: pointer;
     } .dropdown .navdrop {
         background-color: white;
@@ -296,5 +337,23 @@ main.wrap {
     }
     .fashionheader {
         font-size: 2rem;
+    } .fashionpic {
+        width: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    
+    .gbody {
+        gap: 0;
+        letter-spacing: 20px;
+        font-size: 2rem;
+        height: 200px;
+
+    } .gheader {
+        justify-content: space-around
+    } .gordonmm {
+        padding: 80px 50px 0px 50px;
+    } .worktitle {
+        font-size: 3rem;
     }
 }

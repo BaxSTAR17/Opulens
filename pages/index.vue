@@ -48,8 +48,15 @@
         </div>
         <div class="scene past-work">
             <div class="pastworktitle">
-                <span class="pasttitle">PAST</span>
-                <span class="worktitle">Work</span>
+                <span class="pasttitle" v-motion
+                :initial="{ opacity: 0, x: -100}"
+                :visible="{opacity: 1, x:0}"
+                :duration="1300">PAST</span>
+                <span class="worktitle" v-motion
+                :initial="{ opacity: 0, x: 100}"
+                :visible="{opacity: 1, x:0}"
+                :delay="1000"
+                :duration="1300">Work</span>
             </div>
         </div>
         <div class="scene fashion">
@@ -58,8 +65,20 @@
                 <div class="line"></div>
                 <div class="productdesign">Product Design</div>
             </div>
+            <div class="fashionbody">
+                <div class="fashiondesc">Made designs for Fashion Forward’s accessories using environmental-friendly materials.</div>
+                <div class="fashionpic"></div>
+            </div>
         </div>
-        <div class="scene gordon">
+        <div class="scene gordonmm">
+            <div class="gordon gheader">
+                <span>Multimedia Artist</span>
+                <span>Portfolio</span>
+            </div>
+            <div class="gordon gbody">
+                <span class="gordonname">GORDON-</span>
+                <span class="gordonlast">Aliprandi</span>
+            </div>
             <div class="presser">WORK WITH ME</div>
         </div>
     </main>
