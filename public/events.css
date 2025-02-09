@@ -1,0 +1,19 @@
+.clip {
+    width: 100%;
+    height: 690px;
+    display: flex;
+} .semi { height: 380px }
+
+.calendar {
+    background-image: url(../assets/febevent.JPG);
+    background-size: cover;
+    background-position: center;
+}
+
+.carousel {
+    background-color: #6c0303;
+}
+
+.captured {
+    background-color: white;
+}
