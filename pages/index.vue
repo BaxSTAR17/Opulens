@@ -1,3 +1,11 @@
+<script setup lang="ts" defer>
+    const items = [
+        '/photos/soon.png',
+        '/photos/soon.png',
+        '/photos/soon.png'
+    ]
+</script>
+
 <template>
     <main class="wrap">
         <NavBar></NavBar>
@@ -17,8 +25,27 @@
                 <div class="about-pic"></div>
             </div>
         </div>
-        <div class="scene semi samples">
-            
+        <div class="scene samples">
+            <div class="samples-title">FEATURED</div>
+            <UCarousel
+            v-slot="{ item }"
+            :items="items"
+            :ui="{
+                item: 'basis-full',
+                container: 'rounded-md'
+            }"
+            :prev-button="{
+                color: 'black',
+                icon: 'i-mdi-light-arrow-left'
+            }"
+            :next-button="{
+                color: 'black',
+                icon: 'i-mdi-light-arrow-right'
+            }"
+            arrows
+            class="samp">
+                <img :src="item" alt="picture" class="pics" draggable="false">
+            </UCarousel>
         </div>
     </main>
 </template>

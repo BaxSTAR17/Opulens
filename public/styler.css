@@ -10,10 +10,6 @@
     font-family: subtext-bold;
     src: url(../assets/fonts/GlacialIndifference-Bold.otf);
 }
-@font-face {
-    font-family: fancy;
-    src: url(../assets/fonts/Aston-Script.ttf);
-}
 main.wrap {
     width: 100%;
 }
@@ -28,6 +24,7 @@ main.wrap {
 .one-carousel {
     background-image: url(../assets/2017.gif);
     background-size: cover;
+    background-position: center center;
     justify-content: center;
     position: relative;
     height: 600px;
@@ -122,32 +119,32 @@ main.wrap {
     box-shadow: 3px 3px 3px gray, -3px -3px 3px gray;
     cursor: pointer;
 }
+
 .samples {
     display: flex;
     height: 650px;
     width: 100%;
-    position: relative;
-    mask-image: linear-gradient(90deg, transparent, #000, #000, transparent);
     overflow: hidden;
-    perspective: 800px;
     background-image: url(../assets/Film.png);
     background-size: cover;
-    background-position: center center;
+    background-position: center top;
+    flex-direction: column;
+    align-items: center;
+} .samples-title {
+    color: white;
+    font-family: subtext-bold;
+    font-size: 5rem;
+    text-shadow: 4px 4px 4px black;
+} .samples .samp {
+    width: 320px;
+    height: 500px;
+} .samples .samp .pics {
+    width: 100%;
+    height: 500px;
+    box-sizing: border-box;
+    border: 20px solid lightgray;
+    border-bottom: 50px solid lightgray;
 }
-/* } .samples .samp {
-    position: absolute;
-    height: 300px;
-    width: 200px;
-    left: max(calc(200px * 8), 100%);
-    animation: marq 30s linear infinite;
-    animation-delay: calc((30s/8) * (8 - var(--delay)) * -1);
-    box-shadow: 5px 5px 5px black;
-    transition: all 0.2s ease-in-out;
-    scale: 1;
-    transform: rotateY(-160deg);
-    transform-style: preserve-3d;
-    background-size: cover;
-} */
 
 @media screen and (max-width: 650px) {
     .about-header {

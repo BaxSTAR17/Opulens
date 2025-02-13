@@ -1,6 +1,6 @@
 .clip {
     width: 100%;
-    height: 690px;
+    height: 700px;
     display: flex;
 } .semi { height: 380px }
 
@@ -12,8 +12,56 @@
 
 .carousel {
     background-color: #6c0303;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    overflow: hidden;
+} .carousel .phot {
+    box-sizing: border-box;
+    flex-shrink: 0;
+    width: 240px;
+    height: 290px;
+    background-color: black;
+    background-image: url(../public/photos/soon.png);
+    background-size: cover;
+    background-position: center center;
+    border: 10px solid white;
+    border-bottom: 50px solid white;
+    --mod: mod(var(--num), 2);
+    rotate: calc((10 * var(--mod) + var(--num) * (-1 + var(--mod))) * 1deg);
+    animation: carous 30s linear infinite alternate;
+}
+
+@keyframes carous {
+    0% { translate: 0px 0px;}
+    100% { translate: -1100px 0px;}
 }
 
 .captured {
     background-color: white;
+    align-items: center;
+    justify-content: center;
+} .events {
+    width: clamp(340px, 90%, 1100px);
+    height: 600px;
+    background-color: #f1ede9;
+    border-radius: 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} .events-title {
+    width: 100%;
+    font-family: subtext-bold;
+    color: black;
+    text-align: center;
+    height: fit-content;
+    font-size: 3rem;
+} .events-slider {
+    overflow: hidden;
+    
+} .slides {
+    width: 100%;
+    box-sizing: border-box;
+    width: 300px;
+    height: 400px;
 }

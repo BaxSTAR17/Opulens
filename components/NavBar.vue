@@ -11,7 +11,7 @@
 
 <template>
     <div class="navbar">
-        <div class="title"></div>
+        <NuxtLink to="/" class="title"></NuxtLink>
         <div class="menu">
             <NuxtLink to="/" class="nav">About Us</NuxtLink>
             <NuxtLink to="/events" class="nav">Events</NuxtLink>
