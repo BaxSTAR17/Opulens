@@ -1,9 +1,10 @@
 <script setup lang="ts" defer>
     const items = [
-        '/photos/soon.png',
-        '/photos/soon.png',
-        '/photos/soon.png',
-        '/photos/soon.png'
+        '/photos/eventslaunch.jfif',
+        '/photos/eventsvalsu.jfif',
+        '/photos/eventsbahia.jfif',
+        '/photos/eventslacedpopup.jfif',
+        '/photos/eventslacedparty.jfif',
     ]
 </script>
 
@@ -12,15 +13,15 @@
         <NavBar></NavBar>
         <div class="clip calendar"></div>
         <div class="clip semi carousel">
-            <div class="phot" style="--num: 1"></div>
-            <div class="phot" style="--num: 2"></div>
-            <div class="phot" style="--num: 3"></div>
-            <div class="phot" style="--num: 4"></div>
-            <div class="phot" style="--num: 5"></div>
-            <div class="phot" style="--num: 6"></div>
-            <div class="phot" style="--num: 7"></div>
-            <div class="phot" style="--num: 8"></div>
-            <div class="phot" style="--num: 9"></div>
+            <div class="phot" style="--num: 1; background-image: url(./photos/pic1.jfif)"></div>
+            <div class="phot" style="--num: 2; background-image: url(./photos/pic2.jfif)"></div>
+            <div class="phot" style="--num: 3; background-image: url(./photos/pic3.jfif)"></div>
+            <div class="phot" style="--num: 4; background-image: url(./photos/pic4.jfif)"></div>
+            <div class="phot" style="--num: 5; background-image: url(./photos/pic5.jfif)"></div>
+            <div class="phot" style="--num: 6; background-image: url(./photos/pic6.jfif)"></div>
+            <div class="phot" style="--num: 7; background-image: url(./photos/pic7.jfif)"></div>
+            <div class="phot" style="--num: 8; background-image: url(./photos/pic8.jfif)"></div>
+            <div class="phot" style="--num: 9; background-image: url(./photos/pic9.jfif)"></div>
         </div>
         <div class="clip captured">
             <div class="events">

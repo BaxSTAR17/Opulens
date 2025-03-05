@@ -22,7 +22,6 @@
     width: 240px;
     height: 290px;
     background-color: black;
-    background-image: url(../public/photos/soon.png);
     background-size: cover;
     background-position: center center;
     border: 10px solid white;
@@ -43,12 +42,13 @@
     justify-content: center;
 } .events {
     width: clamp(340px, 90%, 1100px);
-    height: 600px;
+    height: 500px;
     background-color: #f1ede9;
     border-radius: 36px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 30px;
 } .events-title {
     width: 100%;
     font-family: subtext-bold;
@@ -63,5 +63,5 @@
     width: 100%;
     box-sizing: border-box;
     width: 300px;
-    height: 400px;
+    height: 300px;
 }

@@ -1,10 +1,10 @@
 <script setup lang="ts" defer>
     const navs = [
         [
-            {label: 'About Us'},
-            {label: 'Events'},
-            {label: 'Booths'},
-            {label: 'Connect with us!'},
+            {label: 'About Us', link: '/'},
+            {label: 'Events', link: '/events'},
+            {label: 'Booths', link: '/booths'},
+            {label: 'Connect with us!', link: '/connect'},
         ]
     ]
 </script>
@@ -15,14 +15,14 @@
         <div class="menu">
             <NuxtLink to="/" class="nav">About Us</NuxtLink>
             <NuxtLink to="/events" class="nav">Events</NuxtLink>
-            <NuxtLink to="" class="nav">Booths</NuxtLink>
-            <NuxtLink to="" class="nav">Connect with us!</NuxtLink>
+            <NuxtLink to="/booths" class="nav">Booths</NuxtLink>
+            <NuxtLink to="/connect" class="nav">Connect with us!</NuxtLink>
         </div>
-        <UDropdown class="dropdown" :items="navs" :popper="{ placement: 'bottom-end' }" :ui="{ background: 'bg-gray-200 dark:bg-gray-300', padding: '0' }">
-            <UButton class="navdrop" trailing-icon="i-uil-bars" color="gray"/>
+        <UDropdown class="dropdown" :items="navs" :popper="{ placement: 'bottom-end' }" :ui="{ background: 'bg-gray-200 dark:bg-gray-300', padding: '0', size: '2xs' }">
+            <UButton class="navdrop" icon="i-mdi-light-menu" color="black"/>
 
             <template #item="{ item }">
-                <a href="" class="nav">{{ item.label }}</a>
+                <NuxtLink :to="item.link" class="nav">{{ item.label }}</NuxtLink>
             </template>
         </UDropdown>
     </div>
