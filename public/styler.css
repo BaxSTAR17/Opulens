@@ -136,14 +136,14 @@ main.wrap {
     font-size: 5rem;
     text-shadow: 4px 4px 4px black;
 } .samples .samp {
-    width: 320px;
-    height: 500px;
+    width: 400px;
+    height: 200px;
 } .samples .samp .pics {
     width: 100%;
-    height: 500px;
+    height: 200px;
     box-sizing: border-box;
-    border: 20px solid lightgray;
-    border-bottom: 50px solid lightgray;
+    border-left: 20px solid white;
+    border-right: 20px solid white;
 }
 
 @media screen and (max-width: 650px) {

@@ -1,8 +1,10 @@
 <script setup lang="ts" defer>
     const items = [
-        '/photos/soon.png',
-        '/photos/soon.png',
-        '/photos/soon.png'
+        '/photos/ValentinesBazaar.jfif',
+        '/photos/ValentinesSU.jfif',
+        '/photos/Bahia.jfif',
+        '/photos/LACEDpopup.jfif',
+    '/photos/lacedparty.jfif'
     ]
 </script>
 
