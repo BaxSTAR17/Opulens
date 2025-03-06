@@ -1,10 +1,30 @@
 <script setup lang="ts" defer>
     const items = [
-        '/photos/ValentinesBazaar.jfif',
-        '/photos/ValentinesSU.jfif',
-        '/photos/Bahia.jfif',
-        '/photos/LACEDpopup.jfif',
-        '/photos/lacedparty.jfif'
+        {
+            src: '/photos/ValentinesBazaar.jfif',
+            event_name: "The Henry's Resort Pre-Valentines Bazaar (LAUNCH DAY)",
+            event_date: 'February 12-13, 2025'
+        },
+        {
+            src: '/photos/ValentinesSU.jfif',
+            event_name: "Silliman Valentines Pop-Up Bazaar",
+            event_date: 'February 14, 2025'
+        },
+        {
+            src: '/photos/Bahia.jfif',
+            event_name: "BAHIA The Inner Circle x Jäegermeister’s Valentines Party",
+            event_date: 'February 14, 2025'
+        },
+        {
+            src: '/photos/LACEDpopup.jfif',
+            event_name: "Laced Pop-Up Bazaar",
+            event_date: 'February 22, 2025'
+        },
+        {
+            src: '/photos/lacedparty.jfif',
+            event_name: "Laced Valentine's Party",
+            event_date: 'February 22, 2025'
+        }
     ];
 </script>
 
@@ -45,7 +65,11 @@
             }"
             arrows
             class="samp">
-                <img :src="item" alt="picture" class="pics" draggable="false">
+                <img :src="item.src" alt="picture" class="pics" draggable="false">
+                <div class="event">
+                    <div class="name">{{ item.event_name }}</div>
+                    <span class="date">{{ item.event_date }}</span>
+                </div>
             </UCarousel>
         </div>
     </main>
